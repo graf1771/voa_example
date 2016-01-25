@@ -12,9 +12,6 @@ you will need [Node.js](http://nodejs.org/) (at least version v0.10.0).
 
 Clone this repository
 
-    git clone git@github.com:alphagov/govuk_elements.git
-
-
 Install the required node modules
 
     npm install
