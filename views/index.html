@@ -1,0 +1,119 @@
+{{<layout}}
+
+{{$pageTitle}}Star Wars Questionnaire{{/pageTitle}}
+
+{{$content}}
+
+<main class="elements-index" id="content" role="main">
+
+  {{>phase_banner}}
+  {{>breadcrumb}}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        VOA example form
+      </h1>
+
+      <p class="lede">
+        A test questionnaire for the front-end developer contract
+      </p>
+
+      <form action="/" method="post" class="form">
+
+        <h1 class="heading-large">
+          Which of these characters are from the Star Wars universe?
+        </h1>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Which of these characters are from the Star Wars universe?</legend>
+
+            <label for="sw_spock" class="block-label">
+              <input type="checkbox" name="sw_spock" value="spock" id="sw_spock">
+              Spock
+            </label>
+
+            <label for="sw_vader" class="block-label">
+              <input type="checkbox" name="sw_vader" value="vader" id="sw_vader">
+              Darth Vader
+            </label>
+
+            <label for="sw_kirk" class="block-label">
+              <input type="checkbox" name="sw_kirk" value="kirk" id="sw_kirk">
+              Captain Kirk
+            </label>
+
+            <label for="sw_skywalker" class="block-label">
+              <input type="checkbox" name="sw_skywalker" value="skywalker" id="sw_skywalker">
+              Luke Skywalker
+            </label>
+
+            <label for="sw_rey" class="block-label">
+              <input type="checkbox" name="sw_rey" value="rey" id="sw_rey">
+              Rey Mysterio
+            </label>
+
+          </fieldset>
+        </div>
+
+        <h1 class="heading-large">
+          Do you know who Rey's parents are?
+        </h1>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">
+              Do you know who Rey's parents are?
+            </legend>
+
+            <label for="radio-yes" class="block-label" data-target="example-yes">
+              <input id="radio-yes" type="radio" name="radio-indent-group" value="Yes">
+              Yes
+            </label>
+
+            <label for="radio-no" class="block-label">
+              <input id="radio-no" type="radio" name="radio-indent-group" value="No">
+              No
+            </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="example-yes">
+
+              <fieldset>
+
+                <legend class="visuallyhidden">
+                  Who are Rey's parents?
+                </legend>
+
+                <div class="form-group form-group-compound">
+                  <label class="form-label" for="reys-parents">Who are Rey's parents?</label>
+                  <input type="text" class="form-control" id="reys-parents">
+                </div>
+
+              </fieldset>
+
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <button class="button">Save and continue</button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+</main><!-- / #content -->
+{{/content}}
+
+{{$bodyEnd}}
+  <!-- GOV.UK elements redirect -->
+  <script src="/public/javascripts/redirect.js"></script>
+  {{>scripts}}
+{{/bodyEnd}}
+
+{{/layout}}
